@@ -1,0 +1,17 @@
+torch
+torchvision
+tensorboard
+pyyaml
+yacs
+monai==0.8.1
+pandas
+numpy
+scikit-image
+calibration @ git+https://github.com/uu-sml/calibration.git@7bd1a2407f96f87e37d81eadaea7efeb14bb8a83
+tqdm
+scipy
+scikit-learn
+ptflops
+
+pillow
+timm
