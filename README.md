@@ -32,7 +32,8 @@ nnFormer_discounting.py
 
 ######### pre-trained weights #####
 
-Pre-Trained weights of the feature extraction (FE) module flair, t1, t1Gd, and t2 are located in ./Pretrained_model.
+Download pre-trained weights of the feature extraction (FE) module flair, t1, t1Gd, and t2 using the link https://drive.google.com/drive/folders/1_iMHbOB2TQSeeoqtvjGZXL4hU6cdlarM?usp=drive_link
+Put the downloaded FE weight in ./Pretrained_model.
 If you want to use other SOTA FE modules, you can train your own FE on the single medical modality and put the trained model here. 
 
 ####### Training #######
