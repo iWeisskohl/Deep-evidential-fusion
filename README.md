@@ -38,11 +38,14 @@ Put the downloaded FE weight in ./Pretrained_model.
 If you want to use other SOTA FE modules, you can train your own FE on the single medical modality and put the trained model here. 
 
 ####### Training #######
+and run
 ```bash
 python script-TRAINING_nnFormer_discounting-early-stooping.py
 ```
 
 #######   Test  ##########
+Download the trained MMEF-nnFormer from link https://drive.google.com/drive/folders/165T-RceXnNCw7UhuZrxN3UCysV-BMORu?usp=drive_link
+and run
 ```bash
 python script-TRAINING_nnFormer_discounting-test.py
 ```
