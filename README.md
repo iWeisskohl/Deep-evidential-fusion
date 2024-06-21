@@ -1,7 +1,7 @@
 Code for paper 
-```bash
+
 "Deep evidential fusion with uncertainty quantification and contextual discounting for multimodal medical image segmentation"
-```
+
 
 We have proposed a deep decision-level fusion architecture for multi-modality medical image segmentation. In this approach, features are first extracted from each modality using a deep neural network such as UNet. An evidence-mapping module based on prototypes in feature space then computes a Dempster-Shafer mass function at each voxel. To account for the varying reliability of different information sources in different contexts, the mass functions are transformed using the contextual discounting operation before being combined by Dempster's rule. The whole framework is trained end-to-end by minimizing a loss function that quantifies prediction error both at the modality level and after fusion.
 
