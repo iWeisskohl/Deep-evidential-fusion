@@ -1,4 +1,7 @@
-Code for paper "Deep evidential fusion with uncertainty quantification and contextual discounting for multimodal medical image segmentation".
+Code for paper 
+```bash
+"Deep evidential fusion with uncertainty quantification and contextual discounting for multimodal medical image segmentation"
+```
 
 We propose a new deep framework allowing us to merge multi-MRI image segmentation results using the formalism of Dempster-Shafer theory while taking into account the reliability of different modalities relative to different classes.
 
