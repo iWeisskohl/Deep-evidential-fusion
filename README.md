@@ -8,8 +8,9 @@ We have proposed a deep decision-level fusion architecture for multi-modality me
 Here we show the example usage to train BraTs2021 dataset when using nnFormer as the baseline feature extractor.
 
 ########Environment requirement######
+Before using the code, please install the required packages using
 ```bash
-Before using the code, please install the required packages using pip install -r requirements.txt
+ pip install -r requirements.txt
 ```
 
 ######### Data  ########
