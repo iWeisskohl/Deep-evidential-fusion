@@ -17,12 +17,24 @@ Before using the code, please install the required packages using pip install -r
 Put your own data on  ./dataset
 ```
 
+######### Model  ########
+
+The proposed models are put in networks/nnFormer
+```bash
+nnFormer_s_ds_flair.py
+nnFormer_s_ds_flair.py
+nnFormer_s_ds_flair.py
+nnFormer_s_ds_flair.py
+nnFormer_discounting.py
+```
+
+
 ######### pre-trained weights #####
 
 ```bash
 Pre-Trained weights of the feature extraction (FE) module flair, t1, t1Gd, and t2 are located in ./Pretrained_model.
 ```
-If you want to use other SOTA FE modules, you can train your own FE on single medical modality and put the trained model here. 
+If you want to use other SOTA FE modules, you can train your own FE on the single medical modality and put the trained model here. 
 
 ####### Training #######
 ```bash
