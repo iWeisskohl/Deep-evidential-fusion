@@ -17,7 +17,7 @@ Put your own data on  ./dataset
 
 ######### pre-trained weights #####
 ```bash
-Pre-Trained weights of FE module for flair, t1, t1Gd and t2 are located in ./Pretrained_model.
+Pre-Trained weights of the FE module for flair, t1, t1Gd, and t2 are located in ./Pretrained_model.
 ```
 
 ####### Training #######
