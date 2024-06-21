@@ -2,7 +2,7 @@ Code for paper "Deep evidential fusion with uncertainty quantification and conte
 
 We propose a new deep framework allowing us to merge multi-MRI image segmentation results using the formalism of Dempster-Shafer theory while taking into account the reliability of different modalities relative to different classes.
 
-Environment requirement:
+###Environment requirement###:
 ```bash
 Before using the code, please install the required packages using pip install -r requirements.txt
 ```
