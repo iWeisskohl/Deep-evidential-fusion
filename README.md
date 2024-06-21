@@ -5,32 +5,32 @@ Code for paper
 
 We propose a new deep framework allowing us to merge multi-MRI image segmentation results using the formalism of Dempster-Shafer theory while taking into account the reliability of different modalities relative to different classes.
 
-############### Environment requirement###########
+########Environment requirement######
 ```bash
 Before using the code, please install the required packages using pip install -r requirements.txt
 ```
 
-############## Data  #################### 
+######### Data  ########
 ```bash
 Put your own data on  ./dataset
 ```
 
-##############  pretrained weights ###########
+######### pre-trained weights #####
 ```bash
 Pre-Trained weights of FE module for flair, t1, t1Gd and t2 are located in ./Pretrained_model.
 ```
 
-############### Training ###############
+####### Training #######
 ```bash
 python script-TRAINING_nnFormer_discounting-early-stooping.py
 ```
 
-###############   Test   ###############
+#######   Test  ##########
 ```bash
 python script-TRAINING_nnFormer_discounting-test.py
 ```
 
-###########  Citing this paper #############
+######### Citing this paper ########
 ```bash
 @article{huang2023deep,
   title={Deep evidential fusion with uncertainty quantification and contextual discounting for multimodal medical image segmentation},
