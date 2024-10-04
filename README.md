@@ -23,9 +23,9 @@ Put your own data on  ./dataset
 The proposed models are put in networks/nnFormer
 ```bash
 nnFormer_s_ds_flair.py
-nnFormer_s_ds_flair.py
-nnFormer_s_ds_flair.py
-nnFormer_s_ds_flair.py
+nnFormer_s_ds_t1ce.py
+nnFormer_s_ds_t1.py
+nnFormer_s_ds_t2.py
 nnFormer_discounting.py
 ```
 
@@ -52,11 +52,14 @@ python script-TRAINING_nnFormer_discounting-test.py
 
 ######### Citing this paper ########
 ```bash
-@article{huang2023deep,
-  title={Deep evidential fusion with uncertainty quantification and contextual discounting for multimodal medical image segmentation},
-  author={Huang, Ling and Ruan, Su and Decazes, Pierre and Denoeux, Thierry},
-  journal={arXiv preprint arXiv:2309.05919},
-  year={2023}
+@article{huang2025deep,
+  title={Deep evidential fusion with uncertainty quantification and reliability learning for multimodal medical image segmentation},
+  author={Huang, Ling and Ruan, Su and Decazes, Pierre and Den{\oe}ux, Thierry},
+  journal={Information Fusion},
+  volume={113},
+  pages={102648},
+  year={2025},
+  publisher={Elsevier}
 }
 @inproceedings{huang2022evidence,
   title={Evidence fusion with contextual discounting for multi-modality medical image segmentation},
