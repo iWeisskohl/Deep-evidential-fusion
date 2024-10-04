@@ -150,7 +150,7 @@ class DsFunction1(torch.autograd.Function):
         return grad_input, grad_W, grad_BETA, grad_alpha, grad_gamma
 
 class Ds1(nn.Module):
-    def __init__(self,input_dim, prototpye_dim, class_dim,W_p):
+    def __init__(self,input_dim, prototpye_dim, class_dim):
         super(Ds1, self).__init__()
         self.input_dim = input_dim
         self.class_dim = class_dim
@@ -160,11 +160,9 @@ class Ds1(nn.Module):
         self.gamma = Parameter(torch.Tensor(self.prototype_dim, 1))
         self.W = Parameter(torch.Tensor(self.prototype_dim, self.input_dim))
 
-        self.reset_parameters(W_p)
+    
 
-    def reset_parameters(self,W_p):
-        #with torch.no_grad():
-        #    self.W.copy_(W_p)
+    def reset_parameters(self):
         nn.init.normal_(self.W)
 
         nn.init.xavier_uniform_(self.BETA)
@@ -1079,9 +1077,6 @@ class nnFormer_s_ds_t1ce(SegmentationNetwork):
         self.model_down=Encoder(pretrain_img_size=crop_size,window_size=window_size,embed_dim=embed_dim,patch_size=patch_size,depths=depths,num_heads=num_heads,in_chans=input_channels)
         self.decoder=Decoder(pretrain_img_size=crop_size,embed_dim=embed_dim,window_size=window_size[::-1][1:],patch_size=patch_size,num_heads=num_heads[::-1][1:],depths=depths[::-1][1:])
 
-        #for p in self.parameters():
-        #    p.requires_grad=False
-        #self.ds1 = Ds1(4,20,4,W_p)
 
         self.final=[]
         if self.do_ds:
@@ -1096,7 +1091,7 @@ class nnFormer_s_ds_t1ce(SegmentationNetwork):
 
         for p in self.parameters():
             p.requires_grad=False
-        self.ds1 = Ds1(4,20,4,W_p)
+        self.ds1 = Ds1(4,20,4)
     
 
     def forward(self, x):
@@ -1129,9 +1124,3 @@ class nnFormer_s_ds_t1ce(SegmentationNetwork):
         
         
    
-
-   
-
-W_p=np.loadtxt('/hpc/home/huang.l/research/TIP_miccai2022_extend_nnunet/brats_hl_medical-segmentation-master_baseline_t1ce/W_p20_nnformer_01.txt')
-W_p=torch.from_numpy(W_p)
-W_p=W_p.to(torch.float32)
